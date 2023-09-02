@@ -6,17 +6,19 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import Trainees from './Trainees';
+import Mentor from './MentorInfo';
 
 const Drawer = createDrawerNavigator();
 
-export default function DrawerNav() {
+const DrawerNav = () => {
   return (
     <NavigationContainer>
       <Drawer.Navigator>
-        <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="About" component={About} />
-        <Drawer.Screen name="Contact" component={Contact} />
+        <Drawer.Screen name="Trainees" component={Trainees} />
+        <Drawer.Screen name="Mentor" component={Mentor} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
-}
+};
+export default DrawerNav;

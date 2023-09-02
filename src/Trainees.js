@@ -1,21 +1,25 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 const TraineesInfo = () => {
   const trainees = [
-    "Shubham Jain",
-    "Shivam",
-    "Kaif",
-    "Ahtesham",
-    "Sourav",
-    "Gaurav",
+    'Shubham Jain',
+    'Shivam',
+    'Kaif',
+    'Ahtesham',
+    'Sourav',
+    'Gaurav',
   ];
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Trainees Info</Text>
       {trainees.map((trainee, index) => (
-        <Text key={index} style={trainee === "Shubham Jain" ? styles.highlightedText : styles.text}>
+        <Text
+          key={index}
+          style={
+            trainee === 'Shubham Jain' ? styles.highlightedText : styles.text
+          }>
           {trainee}
         </Text>
       ))}
