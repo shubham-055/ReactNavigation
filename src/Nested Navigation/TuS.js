@@ -5,11 +5,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Text, TouchableOpacity} from 'react-native';
 
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Trainees from './Trainees';
-import Mentor from './MentorInfo';
+import Home from '../Screens/Home';
+import About from '../Screens/About';
+import Contact from '../Screens/Contact';
+import Trainees from '../Screens/Trainees';
+import Mentor from '../Screens/MentorInfo';
 
 const Tab = createBottomTabNavigator();
 const TuS = createNativeStackNavigator();

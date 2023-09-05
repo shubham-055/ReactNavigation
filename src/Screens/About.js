@@ -1,17 +1,16 @@
-
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-const Home = ({ navigation }) => {
+const AboutScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to my app!</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('About')}>
-        <Text style={styles.link}>Go to About Screen</Text>
+      <Text style={styles.text}>About Screen</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('Contact')}>
+        <Text style={styles.link}>Go to Contact Screen</Text>
       </TouchableOpacity>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -30,4 +29,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default AboutScreen;

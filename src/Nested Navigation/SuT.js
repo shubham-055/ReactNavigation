@@ -7,11 +7,11 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
-import Trainees from './Trainees';
-import Mentor from './MentorInfo';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
+import Trainees from '../Screens/Trainees';
+import Mentor from '../Screens/MentorInfo';
+import Home from '../Screens/Home';
+import About from '../Screens/About';
+import Contact from '../Screens/Contact';
 
 const SuT = () => {
   return (
