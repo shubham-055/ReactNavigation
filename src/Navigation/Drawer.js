@@ -14,7 +14,7 @@ const Drawer = createDrawerNavigator();
 const DrawerNav = () => {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="Tabs" component={Tabs} />
+      <Drawer.Screen name="Latest News" component={Tabs} />
       <Drawer.Screen name="Trainees" component={Trainees} />
       <Drawer.Screen name="Mentor" component={Mentor} />
     </Drawer.Navigator>
