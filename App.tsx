@@ -19,4 +19,16 @@ const App = () => {
   );
 };
 
+import ReduxCounter from './src/Component/ReduxCounter';
+import Counter from './src/Component/Counter';
+import {Provider} from 'react-redux';
+import store from './src/Redux/Store';
+
+// const App = () => {
+//   return (
+//     <Provider store={store}>
+//       <ReduxCounter />
+//     </Provider>
+//   );
+// };
 export default App;
